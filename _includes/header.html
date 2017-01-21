@@ -1,0 +1,11 @@
+<header class="site__header" role="banner">
+
+    <a class="site__title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+
+    <nav class="site__nav">
+        {% for link in site.navigation %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+    </nav>
+
+</header>
