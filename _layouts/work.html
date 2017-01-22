@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="work">
+
+  {{ content }}
+
+  <h1 class="page-heading">Cases</h1>
+
+  <ul class="post-list">
+    {% for case in site.cases %}
+      <li>
+        <h2>{{ case.title | escape }}</h2>
+        {{ case.content }}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
